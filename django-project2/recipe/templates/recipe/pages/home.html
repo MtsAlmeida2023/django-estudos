@@ -1,20 +1,27 @@
-{% include "Recipe/partials/head.html" %}
-
+{% include 'recipe/partials/head.html' %}
 
 <body>
-    {% include "Recipe/partials/header.html" %}
-    {% include "Recipe/partials/search.html" %}
+    {% include 'recipe/partials/header.html' %}
+    {% include 'recipe/partials/search.html' %}
 
-    <main class="main-content-conteiner">
-        <div class="main-content main-content-list conteiner">
-            <div class="recipe recipe-list-item">
-                <div class="recipe-cover">
-                    <img src="https://placehold.co/1280x720?text=Hello+World" alt="temporario">
-                    
-                </div>
-            </div>
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include "recipe/partials/recipe.html" %}
+            {% include "recipe/partials/recipe.html" %}
+            {% include "recipe/partials/recipe.html" %}
+            {% include "recipe/partials/recipe.html" %}
+            {% include "recipe/partials/recipe.html" %}
+            {% include "recipe/partials/recipe.html" %}
+            
         </div>
     </main>
-</body>
+    {% include "recipe/partials/footer.html" %}
 
 </html>
+
+
+
+
+
+
+
